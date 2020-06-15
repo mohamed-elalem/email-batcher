@@ -1,0 +1,9 @@
+{{with .Recipient}}Dear {{.Name}},{{end}}
+
+This is a test email
+
+{{with .Extra}}Best Regards,
+
+{{index . "name"}}
+
+{{index . "email"}}{{end}}
